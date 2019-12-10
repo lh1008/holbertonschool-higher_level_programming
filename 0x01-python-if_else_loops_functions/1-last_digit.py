@@ -10,6 +10,7 @@ if number < 0:
         str5 = '{} {} {} {}'.format(str1, str2, str3, str4)
     else:
         str5 = '{} {} {} -{}'.format(str1, str2, str3, str4)
+    str4 = str4 * -1
 else:
     str4 = number % 10
     str5 = '{} {} {} {}'.format(str1, str2, str3, str4)
