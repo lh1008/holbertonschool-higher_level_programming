@@ -5,3 +5,4 @@ for me in range(10):
             print('{:d}{:d}'.format(me, run), end='')
             if me < 8:
                 print(', ', end='')
+print()
