@@ -52,5 +52,5 @@ _**11. Multiply by using map**_
 Write a function that returns a list with all values multiplied by a number without using any loops.  
 
 _**12. Roman to Integer**_  
-**Technical interview preparation: **
+**Technical interview preparation: **  
 Create a function def roman_to_int(roman_string): that converts a Roman numeral to an integer.  
