@@ -15,7 +15,7 @@
 _**0. Safe list printing**_  
 Write a function that prints `x` elements of a list.
 
-_**1. Safe printing of an integers list **_  
+_**1. Safe printing of an integers list**_  
 Write a function that prints an integer with `"{:d}".format()`.
 
 _**2. Print and count integers**_  
