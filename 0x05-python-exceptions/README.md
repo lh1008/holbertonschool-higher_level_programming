@@ -12,23 +12,23 @@
 
 ### Tasks
 
-_**0. Safe list printing**_
+_**0. Safe list printing**_  
 Write a function that prints `x` elements of a list.
 
-_**1. Safe printing of an integers list **_
+_**1. Safe printing of an integers list **_  
 Write a function that prints an integer with `"{:d}".format()`.
 
-_**2. Print and count integers**_
+_**2. Print and count integers**_  
 Write a function that prints the first `x` elements of a list and only integers.
 
-_**3. Integers division with debug**_
+_**3. Integers division with debug**_  
 Write a function that divides 2 integers and prints the result.
 
-_**4. Divide a list**_
+_**4. Divide a list**_  
 Write a function that divides element by element 2 lists.
 
-_**5. Raise exception**_
+_**5. Raise exception**_  
 Write a function that raises a type exception.
 
-_**6. Raise a message**_
+_**6. Raise a message**_  
 Write a function that raises a name exception with a message.
