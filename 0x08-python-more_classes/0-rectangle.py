@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-class Rectangle:
-    pass
+   """Rectangle module that defines a square"""
+   class Rectangle:
+       pass
