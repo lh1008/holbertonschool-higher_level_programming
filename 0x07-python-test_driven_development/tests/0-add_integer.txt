@@ -1,0 +1,61 @@
+The ``0-add_integer`` module
+======================
+
+Using ``add_integer``
+-------------------
+
+This is the add_integer test.txt file to validate if the
+function adds and gives out testcases when strings, nulls,
+or different TypeErrors cases are thrown to the function.
+
+>>> add_integer = __import__("0-add_integer").add_integer
+
+Now use it:
+
+Positive Numbers
+>>> add_integer(5, 9)
+14
+
+Float Numbers
+>>> add_integer(2.3, 3.4)
+5
+
+Negative Numbers
+>>> add_integer(-4, -5)
+-9
+
+One Argument
+>>> add_integer(3)
+101
+
+Negative Floats Numbers
+>>> add_integer(-2.4, -3.3)
+-5
+
+Two Strings of integers
+>>> add_integer("-5.0", "-8.0")
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+One String, one integer
+>>> add_integer("20", 4)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+One float, one string
+>>> add_integer(9.0, "5")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+Float, none
+>>> add_integer(int("8"))
+106
+
+None
+>>> add_integer(None)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+One integer
+>>> add_integer(2, )
+100
