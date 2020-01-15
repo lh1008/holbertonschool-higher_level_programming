@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 """Rectangle module that defines a square"""
+
+
 class Rectangle:
     """Class rectangle"""
     number_of_instances = 0
     print_symbol = '#'
+
     def __init__(self, width=0, height=0):
         """New instance initalization"""
         self.__height = height
@@ -44,7 +47,7 @@ class Rectangle:
 
     def perimeter(self):
         """Rectangle perimeter"""
-        if self.__width is 0  or self.__height is 0:
+        if self.__width is 0 or self.__height is 0:
             return 0
         else:
             return 2*(self.__width+self.__height)
