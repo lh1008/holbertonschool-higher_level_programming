@@ -5,4 +5,5 @@ Module for empyt class BaseGeometry
 
 
 class BaseGeometry:
+    """Class BaseGeometry"""
     pass
