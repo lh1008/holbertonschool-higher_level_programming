@@ -4,6 +4,6 @@
 
 def read_file(filename=""):
     """Method that printsit to stdout"""
-    with open('my_file_0.txt', 'r') as r:
+    with open(filename, 'r') as r:
         for text in r:
             print(text, end='')
