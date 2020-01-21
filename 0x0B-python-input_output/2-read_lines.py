@@ -5,7 +5,7 @@
 def read_lines(filename="", nb_lines=0):
     """Method that read n lines of a text file UTF8"""
     with open('my_file_0.txt', encoding='utf-8') as file_name:
-        nb_greater = len(file_name.read().split('\n')) -1
+        nb_greater = len(file_name.read().split('\n')) - 1
         file_name.seek(0)
         if nb_lines <= 0 or nb_lines > nb_greater:
             print(file_name.read(), end='')
