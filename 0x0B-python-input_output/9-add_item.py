@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+Module that adds arguments to a Python list
+and then saves them to a file.
+"""
 import sys
 import json
 
