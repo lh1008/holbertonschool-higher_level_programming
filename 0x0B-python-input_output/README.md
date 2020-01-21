@@ -59,6 +59,6 @@ Write a class `Student` that defines a student by: (based on `11-student.py`).
 _**13. Student to disk and reload**_  
 Write a class `Student` that defines a student by: (based on `12-student.py`).  
 
-_**14. Pascal's Triangle**  
+_**14. Pascal's Triangle**_  
 **Technical interview preparation**  
 Create a function def `pascal_triangle(n):` that returns a list of lists of integers representing the Pascal’s triangle of `n`.  
