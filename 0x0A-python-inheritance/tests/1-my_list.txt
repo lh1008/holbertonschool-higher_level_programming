@@ -67,3 +67,20 @@ Inf list
 	>>> inf_list = MyList(float('inf'))
 	Traceback (most recent call last):
 	TypeError: 'float' object is not iterable
+
+Zero append
+
+	>>> zero_list = MyList()
+    	>>> zero_list.append(0)
+    	>>> zero_list.append(0)
+    	>>> zero_list.append(0)
+    	>>> zero_list.append(0)
+    	>>> zero_list.append(0)
+    	>>> zero_list.print_sorted()
+    	[0, 0, 0, 0, 0]
+
+Float
+
+	>>> float_ls = MyList(5.5)
+	Traceback (most recent call last):
+	TypeError: 'float' object is not iterable
