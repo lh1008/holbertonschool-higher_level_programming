@@ -89,5 +89,4 @@ a_list
 
 	>>> a_list = MyList('a')
 	>>> a_list.print_sorted()
-	Traceback (most recent call last):
-	TypeError: print_sorted() missing 1 required positional argument: 'self'
+	['a']
