@@ -80,10 +80,12 @@ class Rectangle(Base):
         Method that prints in stdout
         with the character #
         """
+        if self.__y:
+            for i in range(self.__y):
+                print()
         for i in range(self.__height):
-            for j in range(self.__width):
-                print('#', end='')
-            print()
+            print(' ' * self.__x, end='')
+            print('#' * self.__width)
 
     def __str__(self):
         """Method str override"""
