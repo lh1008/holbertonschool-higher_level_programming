@@ -32,3 +32,11 @@ class Base:
             else:
                 dic = [i.to_dictionary() for i in list_objs]
                 file_name.write(cls.to_json_string(dic))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Method that returns the list of the JSON string rep"""
+        if json_string is None:
+            return "[]"
+        else:
+            return json.loads(json_string)
