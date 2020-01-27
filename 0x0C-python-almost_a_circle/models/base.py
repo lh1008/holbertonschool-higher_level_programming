@@ -40,3 +40,13 @@ class Base:
             return "[]"
         else:
             return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """Method that returnsan instance with all attributes"""
+        if cls.__name__ == 'Rectangle':
+            new_obj = cls(2, 2)
+        elif cls.__name__ == 'Square':
+            new_obj = cls(1)
+        new_obj.update(**dictionary)
+        return new_obj
