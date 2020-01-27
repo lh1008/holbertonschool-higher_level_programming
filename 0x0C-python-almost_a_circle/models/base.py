@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module for first class Base"""
 import json
+import os
 
 
 class Base:
@@ -43,10 +44,23 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        """Method that returnsan instance with all attributes"""
+        """Method that returns an instance with all attributes"""
         if cls.__name__ == 'Rectangle':
             new_obj = cls(2, 2)
         elif cls.__name__ == 'Square':
             new_obj = cls(1)
         new_obj.update(**dictionary)
         return new_obj
+
+    @classmethod
+    def load_from_file(cls):
+        """Method that returnsa list of instances"""
+        name_file = cls.__name__+".json"
+        if not os.path.isfile(name_file):
+                return []
+        with open(name_file, 'r') as file_name:
+           mafe =  cls.from_json_string(file_name.read())
+           inst = []
+           for i in mafe:
+               inst.append(cls.create(**i))
+        return inst
