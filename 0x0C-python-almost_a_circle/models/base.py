@@ -59,7 +59,7 @@ class Base:
         if not os.path.isfile(name_file):
                 return []
         with open(name_file, 'r') as file_name:
-            mafe =  cls.from_json_string(file_name.read())
+            mafe = cls.from_json_string(file_name.read())
             inst = []
             for i in mafe:
                 inst.append(cls.create(**i))
