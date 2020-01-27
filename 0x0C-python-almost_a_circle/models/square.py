@@ -9,33 +9,30 @@ class Square(Rectangle):
     """Class square that inherits from Rectangle"""
     def __init__(self, size, x=0, y=0, id=None):
         """Class constructor method for square"""
-        super().__init__(size, size, x, y, id)
-        self.size = size
+        super().__init__(width=size, height=size, x=x, y=y, id=id)
 
     def __str__(self):
         """Method overloading a square"""
-        size = self.size
+        w = self.width
         x = self.x
         y = self.y
         i = self.id
-        return '[Square] ({}) {}/{} - {}'.format(i, x, y, size)
+        return '[Square] ({}) {}/{} - {}'.format(i, x, y, w)
 
     @property
     def size(self):
         """Sets the value of width"""
-        return self.__size
+        return self.width
 
     @size.setter
     def size(self, value):
         """Sets the value width"""
-        self.width = value
-        self.height = value
         if type(value) is not int:
             raise TypeError("width must be an integer")
         elif value <= 0:
             raise ValueError("width must be > 0")
-        self.__width = value
-        self.__size = value
+        self.width = value
+        self.height = value
 
     def update(self, *args, **kwargs):
         """Method for args and kwargs"""
