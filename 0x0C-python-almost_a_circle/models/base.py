@@ -2,6 +2,7 @@
 """Module for first class Base"""
 import json
 
+
 class Base:
     """First Class-Base"""
     __nb_objects = 0
