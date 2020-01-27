@@ -39,7 +39,7 @@ class Base:
     def from_json_string(json_string):
         """Method that returns the list of the JSON string rep"""
         if not json_string or json_string is None:
-            return "[]"
+            return []
         else:
             return json.loads(json_string)
 
