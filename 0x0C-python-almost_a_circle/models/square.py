@@ -37,3 +37,10 @@ class Square(Rectangle):
         else:
             for key, value in kwargs.items():
                 setattr(self, key, value)
+
+    def to_dictionary(self):
+        """Method that returns the dic rep of a Square"""
+        deec = self.__dict__
+        list = ['id', 'size', 'x', 'y']
+        res = {res: getattr(self, res) for res in list}
+        return res
