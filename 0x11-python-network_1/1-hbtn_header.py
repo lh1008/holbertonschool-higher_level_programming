@@ -7,9 +7,14 @@ import urllib.request
 from sys import argv
 
 
-html = urllib.request.Request(argv[1])
-with urllib.request.urlopen(html) as response:
-    h = response.getheaders()
-    for x in h:
-        if 'X-Request-Id' in x:
-            print(x[1])
+def main():
+    """ Method that sends request and prints value """
+    html = urllib.request.Request(argv[1])
+    with urllib.request.urlopen(html) as response:
+        h = response.getheaders()
+        for x in h:
+            if 'X-Request-Id' in x:
+                print(x[1])
+
+if __name__ == '__main__':
+    main()

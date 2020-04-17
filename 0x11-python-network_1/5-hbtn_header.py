@@ -7,5 +7,10 @@ import requests
 from sys import argv
 
 
-req = requests.get(argv[1])
-print(req.headers['X-Request-Id'])
+def main():
+    """ Method that sends the request and displays value """
+    req = requests.get(argv[1])
+    print(req.headers['X-Request-Id'])
+
+if __name__ == '__main__':
+    main()
