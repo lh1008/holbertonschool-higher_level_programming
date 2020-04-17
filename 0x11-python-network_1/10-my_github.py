@@ -4,6 +4,11 @@ import requests
 from sys import argv
 
 
-req = requests.get('https://api.github.com/users/lh1008')
-print(req.url)
-print(req.text)
+def main():
+    req = requests.get('https://api.github.com/user',
+                       auth=(argv[1], argv[2]))
+    k = req.json()
+    print('{}'.format(k.get('id')))
+
+if __name__ == '__main__':
+    main()
