@@ -55,7 +55,7 @@ Write a script that prints the addition of 2 integers
 _**10. Factorial**_  
 Write a script that computes and prints a factorial  
 
-_**11. Second biggest! **_  
+_**11. Second biggest!**_  
 Write a script that searches the second biggest integer in the list of arguments.  
 
 _**12. Object**_  
