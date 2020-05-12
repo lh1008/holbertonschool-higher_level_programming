@@ -3,8 +3,11 @@ const request = require('request');
 
 const options = {
   url: process.argv[2],
-  method: 'GET',
+  method: 'GET'
 };
-request(options, function(err, res, body) {
+request(options, function (err, res, body) {
+  if (err) {
+    console.log(err);
+  }
   console.log('code: ' + res.statusCode);
 });
