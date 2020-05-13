@@ -11,9 +11,9 @@ request.get(url, function (err, res, body) {
     let c = 0;
     for (const movie of json.results) {
       for (const character of movie.characters) {
-	if (character.endsWith('/18/')) {
+        if (character.endsWith('/18/')) {
           c += 1;
-	}
+        }
       }
     }
     console.log(c);
