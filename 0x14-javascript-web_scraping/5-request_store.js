@@ -10,7 +10,7 @@ request.get(url, function (err, res, body) {
   } else {
     fs.writeFile(process.argv[3], body, 'utf8', function (err) {
       if (err) {
-	console.log(err);
+        console.log(err);
       }
     });
   }
