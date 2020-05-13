@@ -9,7 +9,7 @@ request.get(url, function (err, res, body) {
   } else {
     const json = JSON.parse(body);
     let c = 0;
-    for (let movie = 0; movie < json.count; movie++) {
+    for (let movie = 0; movie < json.count - 2; movie++) {
       if (json.results[movie].characters[18]) {
         c += 1;
       }
