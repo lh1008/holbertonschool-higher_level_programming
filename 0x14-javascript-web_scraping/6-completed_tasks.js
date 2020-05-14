@@ -13,12 +13,5 @@ request.get(url, function (err, res, body) {
 	console.log(info[v].userId, info[v].completed);
       }
     }
-    for (let i = 0; i < info.length; i++) {
-      for (info[i].userId) {
-	if (info[i].completed === true) {
-	  console.log(info[i].userId, info[i].completed);
-	}
-      }
-    }
   }
 });
